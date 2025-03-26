@@ -42,7 +42,7 @@ class Client:
         base_url: typing.Optional[str] = None,
         timeout: typing.Optional[float] = 60,
         httpx_client: typing.Optional[httpx.Client] = None,
-        environment: Environment = Environment.DEFAULT,
+        environment: Environment = Environment.PRODUCTION,
         api_key: typing.Optional[str] = None,
     ):
         """Initialize root client"""
@@ -82,7 +82,7 @@ class AsyncClient:
         base_url: typing.Optional[str] = None,
         timeout: typing.Optional[float] = 60,
         httpx_client: typing.Optional[httpx.AsyncClient] = None,
-        environment: Environment = Environment.DEFAULT,
+        environment: Environment = Environment.PRODUCTION,
         api_key: typing.Optional[str] = None,
     ):
         """Initialize root client"""
